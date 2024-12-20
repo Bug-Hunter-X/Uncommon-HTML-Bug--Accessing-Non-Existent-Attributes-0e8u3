@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This code attempts to access a non-existent attribute
+    // and throws a TypeError in strict mode.  In non-strict
+    // mode, it might silently fail or produce unexpected results.
+    let element = document.getElementById("myDiv");
+    let nonExistent = element.nonExistentAttribute;
+    console.log(nonExistent);
+  </script>
+</body>
+</html>
