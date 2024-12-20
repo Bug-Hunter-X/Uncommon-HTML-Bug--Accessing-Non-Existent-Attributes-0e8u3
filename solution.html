@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    let element = document.getElementById("myDiv");
+    //Check if attribute exists before accessing
+    if (element.hasAttribute("nonExistentAttribute")) {
+        let attributeValue = element.getAttribute("nonExistentAttribute");
+        console.log(attributeValue); 
+    } else {
+        console.log("Attribute does not exist");
+    }
+  </script>
+</body>
+</html>
