@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML bug related to accessing non-existent attributes on an element. The bug.html file contains code that attempts to access a non-existent attribute, potentially leading to errors or unexpected behavior.  The solution.html file shows how to avoid this by checking for the attribute's existence before accessing it.
